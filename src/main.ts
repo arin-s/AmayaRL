@@ -71,7 +71,7 @@ function createDisplayAndDrawMap() {
     display.clear();
 
     // Draw each cell
-    for (let key in map) {
+    for (const key in map) {
       const [x, y] = key.split(",").map(Number);
       const isWall = map[key] === 1;
 
