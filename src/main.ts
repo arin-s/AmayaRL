@@ -58,7 +58,7 @@ function createDisplayAndDrawMap() {
 
   // Callback for the map generator
   const digCallback = (x: number, y: number, value: number) => {
-    const key = `${x},${y}`;
+    const key = `${x.toString()},${y.toString()}`;
     map[key] = value;
   };
 
